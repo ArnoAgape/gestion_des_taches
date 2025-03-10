@@ -46,7 +46,6 @@ public class TaskApi {
         tasks.add(new Task("Nettoyer le garage", calendrier.getTime()));
         calendrier.add(Calendar.DAY_OF_YEAR, 1);
         tasks.add(new Task("Préparer une liste de courses", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
         return tasks;
     }
 
