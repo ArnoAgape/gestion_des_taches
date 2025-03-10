@@ -88,7 +88,9 @@ public class TaskRecyclerViewAdapter extends ListAdapter<Task, TaskRecyclerViewA
             progressIndicator.setProgress(pourcentage);
 
         }
-
+        /**
+         * Fonction pour calculer le pourcentage d'avancement d'une tâche
+         */
         private int calculateProgress(Date dueTime) {
             Calendar dateDuJour = Calendar.getInstance();
             dateDuJour.set(Calendar.HOUR_OF_DAY, 0);
