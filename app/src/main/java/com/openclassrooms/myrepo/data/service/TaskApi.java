@@ -14,13 +14,13 @@ import java.util.List;
 public class TaskApi {
 
 
-
     /**
      * Récupère une liste de tâches simulées depuis l'API.
      *
      * @return Une liste de tâches simulées avec des descriptions pré-définies.
      */
     public List<Task> getTasks() {
+
         // Simule la récupération des tâches depuis une API
         List<Task> tasks = new ArrayList<>();
 
@@ -51,3 +51,4 @@ public class TaskApi {
     }
 
 }
+

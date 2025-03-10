@@ -1,14 +1,16 @@
 package com.openclassrooms.myrepo.ui;
 
 
-
 import com.openclassrooms.myrepo.R;
 import com.openclassrooms.myrepo.model.Task;
+
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 /**
@@ -16,7 +18,6 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private MainViewModel viewModel;
     private TaskRecyclerViewAdapter adapter;
 
     @Override
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
      * Configure le ViewModel et observe les changements dans la liste de tâches.
      */
     private void setupViewModel() {
-        viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+        MainViewModel viewModel = new ViewModelProvider(this).get(MainViewModel.class);
         viewModel.getTasks().observe(this, this::updateTaskList);
     }
 

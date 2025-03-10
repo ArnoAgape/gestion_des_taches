@@ -26,6 +26,7 @@ public class MainViewModel extends ViewModel {
         tasksLiveData = new MutableLiveData<>();
         loadTasks();
     }
+
     /**
      * Récupère les tâches exposées via LiveData.
      *
