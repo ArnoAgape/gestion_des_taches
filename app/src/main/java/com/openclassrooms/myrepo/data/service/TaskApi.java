@@ -24,28 +24,28 @@ public class TaskApi {
         // Simule la récupération des tâches depuis une API
         List<Task> tasks = new ArrayList<>();
 
-        Calendar calendrier = Calendar.getInstance();
-        calendrier.setTime(new Date()); // Date actuelle
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date()); // Date actuelle
 
-        tasks.add(new Task("Faire les courses pour le dîner", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Préparer le rapport pour la réunion", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Répondre aux e-mails en attente", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Faire de l'exercice pendant 30 minutes", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Planifier les vacances d'été", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Rendre le livre à la bibliothèque", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Réviser pour l'examen de mathématiques", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Appeler le plombier pour la fuite d'eau", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Nettoyer le garage", calendrier.getTime()));
-        calendrier.add(Calendar.DAY_OF_YEAR, 1);
-        tasks.add(new Task("Préparer une liste de courses", calendrier.getTime()));
+        tasks.add(new Task("Faire les courses pour le dîner", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Préparer le rapport pour la réunion", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Répondre aux e-mails en attente", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Faire de l'exercice pendant 30 minutes", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Planifier les vacances d'été", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Rendre le livre à la bibliothèque", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Réviser pour l'examen de mathématiques", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Appeler le plombier pour la fuite d'eau", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Nettoyer le garage", calendar.getTime()));
+        calendar.add(Calendar.DAY_OF_YEAR, 1);
+        tasks.add(new Task("Préparer une liste de courses", calendar.getTime()));
         return tasks;
     }
 
